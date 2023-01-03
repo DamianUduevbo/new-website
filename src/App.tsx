@@ -79,7 +79,7 @@ function App() {
             <p className='mb-10'>
               Outside of computer science, I enjoy practicing martial arts, rock climbing, playing volleyball and video games, and solving Wordscapes.
               Though I may not be the best guitar player, I still love playing it nonetheless and can play "Hey There Delilah."
-              I also enjoy binge watching TV shows -- mostly crime dramas -- and currently watching Better Call Saul.
+              I also enjoy binge watching TV shows -- mostly crime dramas -- and am currently watching Better Call Saul.
             </p>
           </div>
         </Middle>
