@@ -7,17 +7,15 @@ export interface IProps {
     children?: any[] | ReactElement<any, any> | ReactNode | ReactNode[]
 }
 
-const mainStyle : string = 'relative top-10 align-middle text-center w-1/2 left-1/4 text-xl'
-const nameStyle : string = `${mainStyle} font-bold text-7xl text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-green-300`
+const mainStyle : string = 'relative top-10 align-middle text-center bg-clip-text bg-gradient-to-br from-gray-400 to-green-300'
+const nameStyle : string = `${mainStyle} font-bold text-transparent`
 
 const Middle = (props : IProps) => {
   return (
-    <div>
-        <div className={nameStyle}>{props.title}</div>
-        <br></br>
-        
+    <span>
+        <h1 className={nameStyle + ` table w-full pb-5 ` + props.className}>{props.title}</h1>
         {props.children}
-    </div>
+    </span>
   )
 }
 
