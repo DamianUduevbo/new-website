@@ -5,6 +5,12 @@ import Middle from './components/Middle';
 
 const mainStyle: string = 'relative top-10 align-middle text-center text-cyan-50 w-1/2 left-1/4 text-xl'
 
+const underlineText : any = (text : string) => {
+  return (
+    <span className=' underline'>{text}</span>
+  )
+}
+
 function App() {
   document.title = 'Damian Uduevbo'
 
@@ -57,23 +63,23 @@ function App() {
       <br></br>
 
       <main>
-        <Middle title='Damian Uduevbo' className=' text-9xl '>
+        <Middle title='Damian Uduevbo' className=' text-9xl mb-10'>
 
-          <div className={mainStyle + ` border-b mb-60 text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-tl to-slate-300 via-slate-300 from-white pb-10`}>
+          <div className={`relative w-3/4 ml-auto mr-auto text-center border-b mb-60 text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-tl to-slate-300 via-slate-300 from-white pb-24`}>
             Passionate, well-rounded, and creative in all things CS.
           </div>
         </Middle>
 
         <Middle title='About Me' className='text-7xl'>
-          <div className={mainStyle + ` font-mono mb-40 border-b`}>
+          <div className={mainStyle + ` text-2xl font-mono mb-40 border-b`}>
             <p className='mb-3'>
-              I am a second year computer science major at Northeastern University and an aspiring full-stack developer, based out of New York City, NY and Boston, MA.
+              I am a second year computer science major at {underlineText('Northeastern University')} and an aspiring full-stack developer, based out of New York City, NY and Boston, MA.
             </p>
 
             <p className='mb-3'>
-              I have a diverse skill set with experience in full-stack development, game programming, AI/ML, cybersecurity, and more,
+              I have a {underlineText('diverse skill set')} with experience in {underlineText('full-stack development, game programming, AI/ML, cybersecurity, and more')},
               and have an endless passion for creating something for someone.
-              Also, I am proficient in Java, JavaScript, Python, C and C#, and have published several projects that make use of these skills.
+              Also, I am proficient in {underlineText('Java, JavaScript, Python, C and C#')}, and have published several projects that make use of these skills.
             </p>
 
             <p className='mb-10'>
